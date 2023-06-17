@@ -1,0 +1,311 @@
+{
+  "categories": ["React"],
+  "exams": [
+    {
+      "id": "c2daf941-1121-4ca4-869b-fb659ce483da",
+      "category": "React",
+      "title": "React Fundamentals",
+      "description": "Whether you're a beginner or an experienced React developer, these multiple-choice questions will challenge your understanding of React concepts, best practices, and key features. Explore topics such as React components, state management, lifecycle methods, hooks, routing, and more. Put your skills to the test and see how well you fare in the world of React development.",
+      "slug": "react-fundamentals",
+      "allocatedTime": 1620,
+      "passingPercent": 90,
+      "questionCount": 27
+    }
+  ],
+  "questions": [
+    {
+      "id": "97b7e110-95fe-4a68-a360-a01b288cb134",
+      "examId": "c2daf941-1121-4ca4-869b-fb659ce483da",
+      "question": "What is React?",
+      "options": [
+        "A server-side scripting language",
+        "A front-end JavaScript library",
+        "A back-end framework",
+        "A database management system"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "50c83879-c405-492e-abd5-51c97fcce32d",
+      "examId": "c2daf941-1121-4ca4-869b-fb659ce483da",
+      "question": "Which of the following is NOT a core feature of React?",
+      "options": ["Virtual DOM", "JSX", "Data binding", "Component-based architecture"],
+      "answer": 3
+    },
+    {
+      "id": "b339a9e7-b2c5-4502-b71f-322766946f50",
+      "examId": "c2daf941-1121-4ca4-869b-fb659ce483da",
+      "question": "What does JSX stand for?",
+      "options": [
+        "JavaScript XML",
+        "Java Standard Extension",
+        "JSON Syntax Extension",
+        "JavaScript XHR"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "9f628549-fc06-4e89-945f-429c6bdd940e",
+      "examId": "c2daf941-1121-4ca4-869b-fb659ce483da",
+      "question": "Which method is used to change the state of a React component?",
+      "options": ["setState()", "updateState()", "changeState()", "modifyState()"],
+      "answer": 0
+    },
+    {
+      "id": "6d1d1987-0810-45b3-8874-200f88858e80",
+      "examId": "c2daf941-1121-4ca4-869b-fb659ce483da",
+      "question": "What are React Hooks?",
+      "options": [
+        "Reusable functions to manage component state and lifecycle",
+        "Predefined styles for React components",
+        "Built-in methods for data fetching in React",
+        "Event listeners for React components"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "e3b41290-8e4f-4400-bce9-8d52ff63a1a0",
+      "examId": "c2daf941-1121-4ca4-869b-fb659ce483da",
+      "question": "Which lifecycle method is invoked immediately after a component is mounted?",
+      "options": [
+        "componentDidMount()",
+        "componentDidUpdate()",
+        "componentWillUnmount()",
+        "componentWillMount()"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "71a415bd-7a5e-4375-a1aa-651e112422c1",
+      "examId": "c2daf941-1121-4ca4-869b-fb659ce483da",
+      "question": "What is the purpose of keys in React lists?",
+      "options": [
+        "To uniquely identify elements in an array",
+        "To style the list items",
+        "To handle click events on list items",
+        "To sort the list items"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "2e8ab14b-3822-4990-b73f-937fbeb704c8",
+      "examId": "c2daf941-1121-4ca4-869b-fb659ce483da",
+      "question": "Which of the following is used for routing in React?",
+      "options": ["React Router", "React Navigation", "React Route", "React Link"],
+      "answer": 0
+    },
+    {
+      "id": "85e0fbbb-4540-4954-bb1e-e97186ad625a",
+      "examId": "c2daf941-1121-4ca4-869b-fb659ce483da",
+      "question": "What is the purpose of propTypes in React?",
+      "options": [
+        "To specify the types of component props",
+        "To define the initial state of a component",
+        "To handle form validation",
+        "To set default props for a component"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "74a4dc60-9559-410d-beee-f2e6050dcc20",
+      "examId": "c2daf941-1121-4ca4-869b-fb659ce483da",
+      "question": "Which method is used to render a React component?",
+      "options": ["renderComponent()", "mountComponent()", "render()", "component()"],
+      "answer": 2
+    },
+    {
+      "id": "1817c502-afa1-417a-a4ce-204a46ae1994",
+      "examId": "c2daf941-1121-4ca4-869b-fb659ce483da",
+      "question": "What is the purpose of shouldComponentUpdate()?",
+      "options": [
+        "To update the component's state",
+        "To define the component's HTML markup",
+        "To determine if a component should re-render",
+        "To handle component unmounting"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "6fdbcecc-16aa-44e2-aeb9-07e700672fd1",
+      "examId": "c2daf941-1121-4ca4-869b-fb659ce483da",
+      "question": "What is the recommended way to update the state that depends on the previous state?",
+      "options": [
+        "Using the setState() method",
+        "Modifying the state object directly",
+        "Using the updateState() method",
+        "Triggering a re-render of the component"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "fe002ddc-9a8c-4d08-83ed-dece61a06006",
+      "examId": "c2daf941-1121-4ca4-869b-fb659ce483da",
+      "question": "What is a controlled component in React?",
+      "options": [
+        "A component that is managed by Redux",
+        "A component with a two-way binding",
+        "A component that renders other components",
+        "A component that manages its own state"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b44fb52e-fabd-4c8f-9c3d-7499ce5a78f7",
+      "examId": "c2daf941-1121-4ca4-869b-fb659ce483da",
+      "question": "Which of the following is NOT a valid way to conditionally render content in React?",
+      "options": [
+        "Using the if-else statement",
+        "Using the switch statement",
+        "Using the ternary operator",
+        "Using the for loop"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "29014e83-158d-4d4c-a41d-8f4f1488acdf",
+      "examId": "c2daf941-1121-4ca4-869b-fb659ce483da",
+      "question": "What is React context used for?",
+      "options": [
+        "To manage global application state",
+        "To handle form submissions",
+        "To style React components",
+        "To perform AJAX requests"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "04307996-d03f-4a14-a85e-26d05a6c9c62",
+      "examId": "c2daf941-1121-4ca4-869b-fb659ce483da",
+      "question": "What is the purpose of the useEffect() hook in React?",
+      "options": [
+        "To perform asynchronous operations in a component",
+        "To manage component state",
+        "To handle user input in a form",
+        "To perform side effects in a component"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "7321c3d3-0abe-4210-85ea-9ecb889fe627",
+      "examId": "c2daf941-1121-4ca4-869b-fb659ce483da",
+      "question": "Which of the following is used to create reusable React components?",
+      "options": ["Higher-order components", "Hooks", "Context", "Refs"],
+      "answer": 0
+    },
+    {
+      "id": "59058382-6fe5-4750-a326-c8a184feb45f",
+      "examId": "c2daf941-1121-4ca4-869b-fb659ce483da",
+      "question": "What is the purpose of React.Fragment?",
+      "options": [
+        "To create a new React project",
+        "To group multiple React components",
+        "To define the root element of a React component",
+        "To handle form submissions in React"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "3613efcb-a200-4e90-a857-98c848a400a9",
+      "examId": "c2daf941-1121-4ca4-869b-fb659ce483da",
+      "question": "What is the purpose of the prop drilling problem in React?",
+      "options": [
+        "To optimize the performance of React components",
+        "To share state between sibling components",
+        "To handle component composition in React",
+        "To pass data through multiple layers of components"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "024635e1-0475-448e-88bc-ea5475453845",
+      "examId": "c2daf941-1121-4ca4-869b-fb659ce483da",
+      "question": "What is the recommended way to fetch data in React?",
+      "options": [
+        "Using the fetch() API",
+        "Using the axios library",
+        "Using the jQuery AJAX method",
+        "Using the componentDidMount() lifecycle method"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "2d31a514-f15a-4ae6-a35b-ab48089c16a4",
+      "examId": "c2daf941-1121-4ca4-869b-fb659ce483da",
+      "question": "What is the purpose of the React DevTools extension?",
+      "options": [
+        "To debug React components",
+        "To optimize the performance of React applications",
+        "To generate code snippets for React components",
+        "To automate the deployment of React applications"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "d0dc14ce-c252-42ca-be2d-23a89314d89e",
+      "examId": "c2daf941-1121-4ca4-869b-fb659ce483da",
+      "question": "Which method is used to remove a component from the DOM in React?",
+      "options": [
+        "unmountComponent()",
+        "removeComponent()",
+        "deleteComponent()",
+        "componentWillUnmount()"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "ce095372-4ae3-4d82-8deb-4e9fca1158d1",
+      "examId": "c2daf941-1121-4ca4-869b-fb659ce483da",
+      "question": "What is the purpose of the key prop in React lists?",
+      "options": [
+        "To uniquely identify elements in an array",
+        "To specify the order of list items",
+        "To handle click events on list items",
+        "To style the list items"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "3435008f-e64b-4fc1-9bd9-46f09c937546",
+      "examId": "c2daf941-1121-4ca4-869b-fb659ce483da",
+      "question": "What is the purpose of the shouldComponentUpdate() method in React?",
+      "options": [
+        "To define the component's HTML markup",
+        "To update the component's state",
+        "To determine if a component should re-render",
+        "To handle component unmounting"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "0ca44d9e-032f-4ce1-b399-6350955336a5",
+      "examId": "c2daf941-1121-4ca4-869b-fb659ce483da",
+      "question": "What is the purpose of the React Router library?",
+      "options": [
+        "To handle form submissions in React",
+        "To manage global application state",
+        "To perform routing in a React application",
+        "To create reusable React components"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "6ec25689-8233-434b-821c-eb4b41506f9b",
+      "examId": "c2daf941-1121-4ca4-869b-fb659ce483da",
+      "question": "Which method is used to update the state in React?",
+      "options": ["setState()", "updateState()", "changeState()", "modifyState()"],
+      "answer": 0
+    },
+    {
+      "id": "e5f87178-a77c-42dd-a20e-4480f6b3b89c",
+      "examId": "c2daf941-1121-4ca4-869b-fb659ce483da",
+      "question": "What is the purpose of the PureComponent class in React?",
+      "options": [
+        "To define a component with a pure function",
+        "To optimize the performance of React applications",
+        "To handle component composition in React",
+        "To perform server-side rendering in React"
+      ],
+      "answer": 1
+    }
+  ]
+}
