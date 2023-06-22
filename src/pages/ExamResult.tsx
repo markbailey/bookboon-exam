@@ -1,19 +1,26 @@
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { useAppSelector } from '../hooks';
+import { useGetExamQuery } from '../services/api';
+import Loading from '../components/Loading';
 
 function ExamResult() {
+  const { slug } = useParams();
   const { examId, score, timedOutQuestionIds, submittedAnswers, startedAt, completedAt } =
     useAppSelector((state) => state.examProgress);
+  const { data: exam, isFetching } = useGetExamQuery({ slug: slug! }, { skip: slug === undefined });
 
   const totalQuestions = timedOutQuestionIds.length + submittedAnswers.length;
   const scorePercentage = Math.round((100 / totalQuestions) * score);
   const timeTaken = (completedAt! - startedAt!) / 1000;
 
+  if (isFetching) return <Loading />;
+
   return (
     <div>
       <h1>Exam Result ({examId})</h1>
+      <h2>{(exam?.passingPercent ?? 100) < scorePercentage ? 'Pass' : 'Fail'}</h2>
       <h2>
-        Score: {score} ({scorePercentage}%)
+        Score: {score} / {totalQuestions} ({scorePercentage}%)
       </h2>
 
       <span>Completed on: {completedAt}</span>
