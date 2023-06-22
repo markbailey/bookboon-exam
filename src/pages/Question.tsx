@@ -48,10 +48,11 @@ function Question() {
   }, [dispatch]);
 
   useEffect(() => {
-    if (currentQuestion === null) return navigate(`/exams/${slug}/result`, { replace: true });
-    else if (currentQuestion.id !== questionId)
-      navigate(`/exams/${slug}/${currentQuestion.id}`, { replace: true });
-  }, [currentQuestion, questionId, slug, navigate]);
+    if (currentQuestion === null && completedAt !== null)
+      navigate(`/exam/${slug}/result`, { replace: true });
+    else if (currentQuestion !== null && currentQuestion.id !== questionId)
+      navigate(`/exam/${slug}/${currentQuestion.id}`, { replace: true });
+  }, [currentQuestion, completedAt, questionId, slug, navigate]);
 
   useEffect(() => {
     setSelectedOption(null);
