@@ -28,9 +28,12 @@ export const submitAnswer = createAsyncThunk(
   'exam/submitAnswer',
   async (params: Answer, { dispatch, getState }) => {
     const { examId, currentQuestion } = (getState() as StoreState).examProgress;
-    if (currentQuestion !== null && examId !== null)
+    let isCorrect = false;
+    if (currentQuestion !== null && examId !== null) {
+      isCorrect = currentQuestion.answer === params.optionIndex;
       await dispatch(nextQuestion({ examId, currentQuestionId: currentQuestion.id }));
-    return params;
+    }
+    return { ...params, isCorrect };
   }
 );
 
@@ -126,9 +129,10 @@ const examProgressSlice = createSlice({
     });
 
     builder.addCase(submitAnswer.fulfilled, (state, action) => {
+      const { isCorrect, ...answer } = action.payload;
       state.isLoading = false;
-      state.submittedAnswers.push(action.payload);
-      state.score += action.payload.optionIndex === state.currentQuestion?.answer ? 1 : 0;
+      state.submittedAnswers.push(answer);
+      state.score += isCorrect ? 1 : 0;
       state.error = null;
     });
 
